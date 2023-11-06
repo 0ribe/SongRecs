@@ -1,0 +1,57 @@
+<%= form_for(@shindan, class: 'form-horizontal', role: 'form') do |f| %>
+    <div class="container-sindan">
+        <div class="row">
+            <div class="col-12">
+                <h3>Question1. 言語を教えてください</h3>
+            </div>
+            <div class="col-6">
+                <p><%= f.check_box :question, {multiple: true}, "1", nil %>日本語</p>
+            </div>
+            <div class="col-6">
+                <p><%= f.check_box :question, {multiple: true}, "2", nil %>英語</p>
+            </div>
+            <div class="col-6">
+                <p><%= f.check_box :question, {multiple: true}, "3", nil %>歌詞なし</p>
+            </div>
+
+            <div class="col-12">
+                <h3>Question2. 当てはまるシーンを教えてください</h3>
+            </div>
+            <div class="col-6">
+                <p><%= f.check_box :question, {multiple: true}, "1", nil %>春</p>
+            </div>
+            <div class="col-6">
+                <p><%= f.check_box :question, {multiple: true}, "2", nil %>夏</p>
+            </div>
+            <div class="col-6">
+                <p><%= f.check_box :question, {multiple: true}, "3", nil %>秋</p>
+            </div>
+            <div class="col-6">
+                <p><%= f.check_box :question, {multiple: true}, "4", nil %>冬</p>
+            </div>
+            <div class="col-6">
+                <p><%= f.check_box :question, {multiple: true}, "5", nil %>通年</p>
+            </div>
+
+            <div class="col-12">
+                <h3>Question3. 雰囲気を教えてください</h3>
+            </div>
+            <div class="col-6">
+                <p><%= f.check_box :question, {multiple: true}, "1", nil %>楽しい</p>
+            </div>
+            <div class="col-6">
+                <p><%= f.check_box :question, {multiple: true}, "2", nil %>恋愛</p>
+            </div>
+            <div class="col-6">
+                <p><%= f.check_box :question, {multiple: true}, "3", nil %>悲しい</p>
+            </div>
+            <div class="col-6">
+                <p><%= f.check_box :question, {multiple: true}, "4", nil %>懐かしい</p>
+            </div>
+            
+        </div>
+    </div>
+    <div class="sindanbotan">
+        <%= f.submit "post" %>
+    </div>
+<% end %>

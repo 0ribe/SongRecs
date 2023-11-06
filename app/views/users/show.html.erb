@@ -1,0 +1,22 @@
+<h1>User Profile</h1>
+<p>名前 : <%= @user.name %></p>
+<p>メールアドレス : <%= @user.email %></p>
+<p>プロフィール : <%= @user.profile %></p>
+
+<%= image_tag @user.image_url, size: "250x200" if @user.image? %>
+
+<% if current_user.id == @user.id %>
+  <%= link_to "編集する", edit_user_registration_path %>
+<% end %>
+
+<h2>ユーザーの投稿一覧</h2>
+<% @user.songs.each do |t| %>
+  <p><%= t.created_at %></p>
+  <%= t.user.name %>
+  <%= t.tile %>
+  <%= t.name %>
+  <%= t.about %>
+<% end %>
+
+
+<p><%= link_to "Song一覧に戻る", songs_path %></p>

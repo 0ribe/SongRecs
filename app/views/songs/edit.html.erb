@@ -1,0 +1,19 @@
+<%= form_for @song do |f| %>
+
+      <div class="field">
+        <%= f.label :曲名 %>
+        <%= f.text_field :tile, :size => 30 %>
+      </div>
+    
+     <div class="field">
+        <%= f.label :アーティスト名 %>
+        <%= f.text_field :name, :size => 30 %>
+      </div>
+    
+     <div class="field">
+        <%= f.label :ひとこと %>
+        <%= f.text_field :about, :size => 30 %>
+      </div>
+    
+      <%= f.submit "編集する" %>
+    <% end %>

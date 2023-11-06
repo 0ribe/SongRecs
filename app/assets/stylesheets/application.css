@@ -1,0 +1,67 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+/* Add styles for the header section */
+
+body {
+  background-color: #4E989C;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.green-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #4E989C;
+  z-index: -1;
+}
+
+header {
+  background-color: #4E989C; /* Change the background color to something that stands out */
+  color: white; /* Set the text color to white */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px; /* Adjust padding to your preference */
+}
+
+/* Style the header title */
+.header-title {
+  margin: 0;
+  font-size: 24px;
+}
+
+/* Style the header actions */
+.header-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header-list ul li {
+  display: inline;
+  margin-right: 20px; /* Adjust the margin to control spacing between links */
+}
+
+/* Position "新規登録へ" and "診断" to the right */
+.header-list ul li:last-child {
+  margin-right: 0; /* Remove margin from the last item to prevent extra spacing */
+}
+

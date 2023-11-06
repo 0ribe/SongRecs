@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<%= stylesheet_link_tag 'application.css', media: 'all' %>
+
+  <title>SongRecs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
+
+  <script src="https://kit.fontawesome.com/32c3b7ffb7.js" crossorigin="anonymous"></script>
+
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+</head>
+
+<body>
+  <!-- Add the green background -->
+  <div class="green-background"></div>
+
+  <header>
+    <h1 class="header-title">Music Base</h1>
+    <div class="header-list">
+      <ul>
+        <li><%= link_to "診断", new_shindan_path %></li>
+        <li><%= link_to "みんなの投稿", lists_path %></li>
+          <% if user_signed_in? %>
+            <li><%= link_to 'ログアウト', destroy_user_session_path, method: :delete %></li>
+            <li><%= link_to "マイページへ", user_path(current_user.id) %></li>
+            <% else %>
+            <li><%= link_to "新規登録", new_user_registration_path %></li>
+            <li><%= link_to "ログイン", new_user_session_path %></li>
+          <% end %>
+      </ul>
+    </div>
+  </header>
+  <main>
+    <%= yield %>
+  </main>
+
+  <!-- Move the white rectangle here -->
+  <div class="white-rectangle"></div>
+</body>
+</html>
