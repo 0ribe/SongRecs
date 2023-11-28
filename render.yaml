@@ -1,6 +1,6 @@
 databases:
   - name: SongRecs_db
-    databaseName: songrecs_db
+    databaseName: songrecs_db_1s4n
     user: SonRecs
     region: singapore
 

@@ -1,3 +1,53 @@
 // Place all the styles related to the Lists controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+.listtitle {
+    margin-left: 70px;
+    font-size: larger;
+}
+
+.button_solid020 a {
+  z-index: 3;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 240px;
+  padding: 20px 70px;
+  color: #FFF;
+  transition: 0.3s ease-in-out;
+  font-weight: 600;
+  background: #ECB642;
+  border-radius: 3px;
+  border-radius: 50px;
+  left: 50px;
+  text-decoration: none;
+}
+
+.button_solid020 a:after {
+    content: '';
+    width: 5px;
+    height: 5px;
+    border-top: 3px solid #FFF;
+    border-right: 3px solid #FFF;
+    transform: rotate(45deg) translateY(-50%);
+    position: absolute;
+    top: 46%;
+    right: 20px;
+    border-radius: 1px;
+    transition: 0.3s ease-in-out;
+  }
+  .button_solid020 a:hover {
+    transform: translateY(-2px);
+    
+  }
+
+.search {
+    margin-left: 70px;
+    font-style: none;
+}
+
+.list {
+    margin-left: 70px;
+}

@@ -19,11 +19,13 @@
   <div class="green-background"></div>
 
   <header>
-    <h1 class="header-title">Music Base</h1>
+    <a href="/songs">
+      <%= image_tag 'logo.jpg', class:"logo1" %>
+    </a>
     <div class="header-list">
       <ul>
         <li><%= link_to "診断", new_shindan_path %></li>
-        <li><%= link_to "みんなの投稿", lists_path %></li>
+        <li><%= link_to "みんなで投稿", lists_path %></li>
           <% if user_signed_in? %>
             <li><%= link_to 'ログアウト', destroy_user_session_path, method: :delete %></li>
             <li><%= link_to "マイページへ", user_path(current_user.id) %></li>
@@ -33,6 +35,7 @@
           <% end %>
       </ul>
     </div>
+    
   </header>
   <main>
     <%= yield %>

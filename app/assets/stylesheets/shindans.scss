@@ -2,7 +2,137 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
-    h2{
-        text-align: center;
-        
-    }
+.row {
+    text-align: center;
+    
+}
+
+
+.col-6 {
+    display: inline-block;
+    font-size: 20px;
+}
+
+.col-6 p {
+    margin-right: 20px; /* You can adjust the margin as needed */
+}
+
+.container {
+    background-color: #f5f5f5;
+    margin: 20px;
+    border-radius: 50px;
+    position: relative;
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+.yellowvinyl0 {
+    height: 250px;
+    margin-left: 20px;
+    margin-top: 260px;
+}
+
+.pinkvinyl0 {
+    height: 250px;
+    margin-left: 50px;
+    margin-top: 240px;
+}
+
+.greenvinyl0 {
+    height: 250px;
+    margin-left: 160px;
+    margin-top: 100px;
+}
+
+.container1 {
+    background-color: #ecb642;
+    margin: 20px;
+    border-radius: 50px;
+    position: relative;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    height: 520px;
+}
+
+.sindanbotan {
+    text-align: center;
+}
+
+.sindanbotan input[type="submit"] {
+    background-color: #ecb642; /* Change the background color to your preference */
+    color: white; /* Change the text color to white or a contrasting color */
+    padding: 10px 20px; /* Adjust padding as needed */
+    border: none; /* Remove the button border */
+    border-radius: 50px; /* Add rounded corners */
+    width: 150px;
+    height: 50px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.intoro {
+    position: relative;
+    margin-left: 80px;
+    color: white;
+    line-height: 30px;
+}
+
+.disk {
+    position: absolute;
+
+}
+
+.greenvinyl1 {
+    margin-left: 1050px;
+    margin-top: -50px;
+    height: 250px;
+}
+
+.pinkvinyl1 {
+    margin-left: 1180px;
+    margin-top: -170px;
+    height: 250px;
+}
+
+.intoro h1 {
+    font-size: 50px;
+    
+}
+
+.kekka-container {
+    background-color: white;
+    height: 300px;
+    padding-bottom: 40px;
+}
+
+.kekka {
+    margin-left: 180px;
+    line-height: 30px;
+}
+
+.kekka h1 {
+    font-size: 90px;
+    padding-top: 130px;
+}
+
+.kekka h2 {
+    font-size: 60px;
+    padding-top: 130px;
+}
+
+.kekka h3 {
+    padding-top: 90px;
+    font-size: 50px;
+    line-height: 60px;
+}
+
+.kekka h4 {
+    padding-top: 90px;
+    font-size: 40px;
+    line-height: 60px;
+}
+
+.kekka p {
+    font-size: 20px;
+}
+
